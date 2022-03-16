@@ -29,6 +29,7 @@ namespace Jenkins_test.Controllers
             try
             {
                 string password = "administrator";
+                string testNull;
                 string token = "iljskdfjksdfl2s5dfs1fd5sd2df5sdf52sf$sf";
                 string sql = "SELECT * FROM Users where login = '"+ login + "' and password = '"+ password + "'";
                 var rng = new Random();
