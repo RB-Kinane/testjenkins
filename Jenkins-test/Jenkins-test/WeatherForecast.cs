@@ -12,6 +12,6 @@ namespace Jenkins_test
 
         public string Summary { get; set; }
 
-        public string Password => "$ssqs$ùsdf";
+        public string Query { get; set; }
     }
 }
