@@ -24,11 +24,10 @@ namespace Jenkins_test.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public IEnumerable<WeatherForecast> Get(string login)
         {
             try
             {
-                string login = "admin";
                 string password = "administrator";
                 string token = "iljskdfjksdfl2s5dfs1fd5sd2df5sdf52sf$sf";
                 string sql = "SELECT * FROM Users where login = '"+ login + "' and password = '"+ password + "'";
