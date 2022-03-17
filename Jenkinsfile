@@ -12,6 +12,6 @@ node {
     }
   }
   stage('Test') {
-    bat "dotnet test Jenkins-test/TestProject/TestProject.csproj"
+    bat "dotnet test Jenkins-test/TestProject/TestProject.csproj -bl"
   }
 }
