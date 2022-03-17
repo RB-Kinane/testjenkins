@@ -11,4 +11,7 @@ node {
       bat "dotnet ${scannerHome}\\SonarScanner.MSBuild.dll end"
     }
   }
+  stage('Test') {
+    bat "dotnet test Jenkins-test/TestProject/TestProject.csproj"
+  }
 }
