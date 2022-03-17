@@ -28,7 +28,7 @@ namespace TestProject
         public void IsPrime_InputIsMinus1_ReturnFalse()
         {
             var primeService = new PrimeService();
-            bool result = primeService.IsPrime(-1);
+            bool result = primeService.IsPrime(0);
 
             Assert.False(result, "-1 should be prime");
         }
