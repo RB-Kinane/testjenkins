@@ -24,14 +24,14 @@ namespace TestProject
         //    Assert.False(result, "0 should be prime");
         //}
 
-        //[Fact]
-        //public void IsPrime_InputIsMinus1_ReturnFalse()
-        //{
-        //    var primeService = new PrimeService();
-        //    bool result = primeService.IsPrime(-1);
+        [Fact]
+        public void IsPrime_InputIsMinus1_ReturnFalse()
+        {
+            var primeService = new PrimeService();
+            bool result = primeService.IsPrime(-1);
 
-        //    Assert.False(result, "-1 should be prime");
-        //}
+            Assert.False(result, "-1 should be prime");
+        }
 
     }
 }
