@@ -1,0 +1,25 @@
+name: .NET
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Restore dependencies
+      run: dotnet restore ./Jenkins-test/Jenkins-test.sln
+    - name: Build
+      run: dotnet build ./Jenkins-test/Jenkins-test/Jenkins-test.csproj --no-restore
+    - name: Test
+      run: dotnet test ./Jenkins-test/TestProject/TestProject.csproj --no-build --verbosity normal
