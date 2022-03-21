@@ -28,7 +28,7 @@ namespace Jenkins_test.Controllers
         {
             try
             {
-                string password = "administrator";
+                string password = "administrator2022";
                 string sql = "SELECT * FROM Users where login = '"+ login + "' and password = '"+ password + "'";
                 var rng = new Random();
                 return Enumerable.Range(1, 5).Select(index => new WeatherForecast
