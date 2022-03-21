@@ -21,5 +21,3 @@ jobs:
       run: dotnet restore ./Jenkins-test/Jenkins-test.sln
     - name: Build
       run: dotnet build ./Jenkins-test/Jenkins-test/Jenkins-test.csproj --no-restore
-    - name: Test
-      run: dotnet test ./Jenkins-test/TestProject/TestProject.csproj --no-build --verbosity normal
